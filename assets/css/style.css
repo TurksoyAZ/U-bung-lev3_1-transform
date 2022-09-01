@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+section {
+  height: 400px;
+  width: 25rem;
+  text-align: center;
+  perspective: 1000px;
+  position: relative;
+}
+
+div {
+  width: 450px;
+  height: 110px;
+  border-radius: 10px;
+  text-align: left;
+  padding: 0px 10px 10px 70px;
+  border: 1px solid black;
+  position: absolute;
+  perspective-origin: center;
+  perspective: 1000px;
+  transform: rotateY(-20deg) rotateX(10deg) rotateZ(1deg) ;
+  transition: .3s all ease;
+}
+
+
+/* div1 */
+
+section div:nth-of-type(1) {
+  background-color: rgb(172, 228, 247, 0.8);
+  z-index: 3;
+}
+section div:nth-of-type(1):hover{
+  perspective: 1000px;
+transform: scale(1.06) rotateY(-10deg) rotateZ(1deg);
+background-color: rgb(172, 228, 247);
+z-index: 3;
+}
+
+
+
+
+/* div2 */
+
+section div:nth-of-type(2) {
+  background-color: rgb(243, 254, 190, 0.8);
+  top: 90px;
+  z-index: 2;
+}
+section div:nth-of-type(2):hover{
+  transform: scale(1.06) rotateY(-10deg) rotateZ(1deg);
+  background-color: rgb(243, 254, 190);
+  z-index: 3;
+  }
+
+
+
+/* div3 */
+
+
+section div:nth-of-type(3) {
+  background-color: rgb(238, 214, 250);
+  top: 180px;
+  z-index: 1;
+}
+section div:nth-of-type(3):hover{
+  transform: scale(1.06) rotateY(-10deg) rotateZ(1deg);
+  background-color: rgb(238, 214, 250);
+  z-index: 2;
+  }
